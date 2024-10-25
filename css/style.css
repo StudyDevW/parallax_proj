@@ -1,0 +1,316 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+@font-face {
+    font-family: museo_sans_cyrl_f;
+    src: url(../fonts/museo_sans_cyrl_900.woff);
+    font-weight: 900;
+}
+
+body {
+    background-color: #010101;
+    color: #fff;
+    font-family: museo_sans_cyrl_f, sans-serif;
+}
+
+.main-header {
+    position: relative;
+}
+
+.logo-croc {
+    display: inline-block;
+    vertical-align: top;
+
+    padding-left: 10%;
+    padding-top: 5px;
+}
+
+.header-text-main {
+    padding-left: 15px;
+    padding-top: 15px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-family: museo_sans_cyrl_f, sans-serif;
+}
+
+.header-elements {
+    display: inline;
+    background: rgba(50, 50, 50, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 3;
+    text-align: left;
+    height: 70px;
+    width: 100vw;
+}
+
+.main-header::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/perehod.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -150px;
+}
+
+.text_article_01 {
+    transform: translate3d(calc((var(--scrollTop) / 6) * (-1)), 0, 0);
+    font-size: calc(var(--index) * 0.88);
+    opacity: 1;
+}
+
+.text_article_02 {
+    transform: translate3d(0, 0, 0);
+    font-size: calc(var(--index) * 0.88);
+    opacity: 1;
+}
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    z-index: 2;
+}
+
+.layers__background {
+    transform: translate3d(0, calc(var(--scrollTop) / 3), 0);
+    z-index: 0;
+}
+
+
+.layers__background_2 {
+    bottom: 150px;
+    transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+    z-index: 4;
+}
+
+.layers__background_3 {
+    z-index: 6;
+}
+
+.layers__background_4 {
+    bottom: 600px;
+    transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+    z-index: 4;
+}
+
+.layers__background_5 {
+    z-index: 6;
+}
+
+
+.layers__croc {
+   
+    margin-left: -400px;
+    transform: translate3d(calc((var(--scrollTop) / 5)), 0, 0);
+}
+
+.layers__aquaman {
+    margin-left: -70vh;
+    transform: translate3d(calc((var(--scrollTop) / 6) * (-1)), calc((var(--scrollTop) / 9) ), 0);
+}
+
+.layer__header {
+    margin-bottom: 100px;
+    z-index: 1;
+    transform: translate3d(0, calc((var(--scrollTop) / 6)), 0);
+    text-transform: uppercase;
+    will-change: transform;
+    letter-spacing: calc(var(--index) * 0.2);
+    font-size: calc(var(--index) * 1.5);
+}
+
+
+
+.layer__header_01 {
+    margin-bottom: 500px;
+    z-index: 5;
+    transform: translate3d(0, calc((var(--scrollTop) / 6)), 0);
+    text-transform: uppercase;
+    will-change: transform;
+    letter-spacing: calc(var(--index) * 0.2);
+    font-size: calc(var(--index) * 1.5);
+}
+
+.layer__header_02 {
+    margin-bottom:700px;
+    z-index: 7;
+    color: lightgray;
+    transform: translate3d(0, calc((var(--scrollTop) / 6)), 0);
+    text-transform: uppercase;
+    will-change: transform;
+    letter-spacing: calc(var(--index) * 0.2);
+    font-size: calc(var(--index) * 1.5);
+}
+
+
+.main-article {
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-article::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/perehod.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -150px;
+}
+
+.main-article_01 {
+    
+    position: relative;
+    min-height: 120vh;
+}
+
+.main-article_01::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/perehod.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -150px;
+}
+
+
+.main-article_02 {
+    
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-article_02::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/perehod.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -150px;
+}
+
+
+
+.main-article_03 {
+    
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-article_03::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/perehod.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -150px;
+}
+
+
+.layers__croc_options {
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 100px;
+    transform: translate3d(calc((var(--scrollTop) / 6)), 0, 0);
+}
+
+
+.right_phantom_block {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    z-index: 101;
+}
+
+.right_real_block_links {
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+  
+}
+
+.header-links-main {
+    display: inline-block;
+    padding-top: 25px;
+    text-align: left;
+  
+}
+
+.white_links {
+    color:#fff;
+}
+
+.white_links_h {
+    color:#fff;
+    padding-left: 50px;
+}
+
+
+.right_real_block_text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.right_real_block {
+    position: fixed;
+    
+    background: rgba(50, 50, 50, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin-left: 2%;
+    margin-top: 10%;
+    height: 200px;
+    width: 200px;
+    
+    z-index: 102;
+}
+
+.footer_class {
+    height: 200px;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+}
